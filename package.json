@@ -4,6 +4,7 @@
   "displayName": "MapBasic Lang",
   "description": "Syntax highlighting for MapBasic",
   "version": "0.0.2",
+  "icon": "./MapBasicLangIcon.png",
   "engines": {
     "vscode": "^1.88.0"
   },
