@@ -1,0 +1,79 @@
+{
+    "For": {
+        "prefix": "for",
+        "body": [
+            "For ${1:var_name} = ${2:start_expr} To ${3:end_expr}",
+            "\t$0",
+            "Next"
+        ],
+        "description": "For Loop"
+    },
+    "While": {
+        "prefix": "while",
+        "body": [
+            "While ${1:var_name}",
+            "\t$0",
+            "Wend"
+        ],
+        "description": "While Loop"
+    },
+    "if": {
+        "prefix": "if",
+        "body": [
+            "If ${1:condition} Then",
+            "\t$0",
+            "End If"
+        ],  
+        "description": "If Then"
+    },
+    "if_else": {
+        "prefix": "if",
+        "body": [
+            "If ${1:condition} Then",
+            "\t$0",
+            "Else",
+            "\t",
+            "End If"
+        ],
+        "description": "If Else"
+    },
+    "Do_loop": {
+        "prefix": "do",
+        "body": [
+            "Do",
+            "\t$0",
+            "Loop ${1|Until,While|} ${2:condition}"
+        ],
+        "description": "Do Loop"
+    },
+    "Dim": {
+        "prefix": "Dim",
+        "body": [
+            "Dim ${1:var_name} As ${2|SmallInt,Integer,LargeInt,IntPtr,Float,String,Logical,Date,DateTime,Time,Object,Alias,Pen,Brush,Font,Symbol,This,RefPtr|}"
+        ],
+        "description": "Dim a variable"
+    },
+    "Global_Variable": {
+        "prefix": "Global",
+        "body": [
+            "Global ${1:var_name} As ${2|Integer,LargeInt,SmallInt,IntPtr,Float,String,Logical,Date,DateTime,Time,Object,Alias,Pen,Brush,Font,Symbol,This,RefPtr|}"
+        ],
+        "description": "Dim a Global variable"
+    },
+    "Function Declaration": {
+        "prefix": "Function",
+        "body" : [
+            "Function ${1:function_name} (${2:param} As ${3|Integer,LargeInt,SmallInt,IntPtr,Float,String,Logical,Date,DateTime,Time,Object,Alias,Pen,Brush,Font,Symbol,This,RefPtr|}) As ${4|Integer,LargeInt,SmallInt,IntPtr,Float,String,Logical,Date,DateTime,Time,Object,Alias,Pen,Brush,Font,Symbol,This,RefPtr|}",
+            "\t$0",
+            "End Function"
+        ]
+    },
+    "Sub Declaration": {
+        "prefix": "Sub",
+        "body" : [
+            "Sub ${1:sub_name}",
+            "\t$0",
+            "End Sub"
+        ]
+    }
+}
