@@ -28,7 +28,7 @@
     ],
     "themes": [
       {
-        "label": "label",
+        "label": "mapbasic-syntactic-theming",
         "id": "mapbasic-color-theme",
         "uiTheme": "vs-dark",
         "path": "./themes/mapbasic.tmTheme"
