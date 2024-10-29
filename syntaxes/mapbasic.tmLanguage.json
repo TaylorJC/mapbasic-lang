@@ -32,7 +32,7 @@
 				},
 				{
 					"name":"comment.inline.mapbasic",
-					"begin": "\\s'",
+					"begin": "(\\s)*'",
 					"end": "\\n"
 				}
 			]
@@ -124,10 +124,7 @@
 			},
 			{
 				"name":"variable.parameter.mapbasic",
-				"match": "(?<!\\s*(?i:Dim|Global))\\b(\\S*)\\b(?= (?i:As))",
-				"captures": {
-					
-				}
+				"match": "(?<!\\s*(?i:Dim|Global))\\b(\\S*)\\b(?= (?i:As))"
 			}
 		]
 		}

@@ -41,6 +41,20 @@
         "language": "mapbasic",
         "path": "./snippets/mapbasic.json"
       }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "mapbasicLang.build",
+          "when": "editorLangId == mapbasic"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "mapbasicLang.build",
+        "title": "Compile"
+      }
     ]
   }
 }
