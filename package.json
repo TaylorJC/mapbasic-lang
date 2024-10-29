@@ -1,7 +1,10 @@
 {
   "name": "mapbasic-lang",
   "publisher": "JCrain",
-  "repository": "https://github.com/TaylorJC/mapbasic-lang",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/TaylorJC/mapbasic-lang"
+  },
   "displayName": "MapBasic Lang",
   "description": "Syntax highlighting for MapBasic",
   "version": "0.0.3",
@@ -12,6 +15,11 @@
   "categories": [
     "Programming Languages", "Snippets"
   ],
+  "configurationDefaults": {
+    "[languageId]": {
+      "editor.semanticHighlighting.enabled": true
+    }
+  },
   "contributes": {
     "languages": [
       {
@@ -33,7 +41,8 @@
         "label": "mapbasic-syntactic-theming",
         "id": "mapbasic-color-theme",
         "uiTheme": "vs-dark",
-        "path": "./themes/mapbasic.tmTheme"
+        "path": "./themes/mapbasic.tmTheme",
+        "semanticHighlighting": true
       }  
     ],
     "snippets": [
@@ -41,20 +50,6 @@
         "id": "mapbasic",
         "language": "mapbasic",
         "path": "./snippets/mapbasic.json"
-      }
-    ],
-    "menus": {
-      "commandPalette": [
-        {
-          "command": "mapbasicLang.build",
-          "when": "editorLangId == mapbasic"
-        }
-      ]
-    },
-    "commands": [
-      {
-        "command": "mapbasicLang.build",
-        "title": "Compile"
       }
     ]
   }
