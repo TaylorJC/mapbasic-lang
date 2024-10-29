@@ -12,13 +12,14 @@
   },
   "displayName": "MapBasic",
   "description": "Syntax highlighting and snippets for the MapBasic language",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "icon": "./MapBasicLangIcon.png",
   "engines": {
     "vscode": "^1.88.0"
   },
   "categories": [
-    "Programming Languages", "Snippets"
+    "Programming Languages",
+    "Snippets"
   ],
   "configurationDefaults": {
     "[languageId]": {
@@ -28,17 +29,24 @@
   "contributes": {
     "languages": [
       {
-      "id": "mapbasic",
-      "aliases": ["MapBasic", "mapbasic"],
-      "extensions": [".mb",".def",".mbp"],
-      "configuration": "./language/language-configuration.json"
+        "id": "mapbasic",
+        "aliases": [
+          "MapBasic",
+          "mapbasic"
+        ],
+        "extensions": [
+          ".mb",
+          ".def",
+          ".mbp"
+        ],
+        "configuration": "./language/language-configuration.json"
       }
     ],
     "grammars": [
       {
-      "language": "mapbasic",
-      "scopeName": "source.mapbasic",
-      "path": "./syntaxes/mapbasic.tmLanguage.json"
+        "language": "mapbasic",
+        "scopeName": "source.mapbasic",
+        "path": "./syntaxes/mapbasic.tmLanguage.json"
       }
     ],
     "snippets": [
