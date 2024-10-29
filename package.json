@@ -1,9 +1,10 @@
 {
   "name": "mapbasic-lang",
-  "publisher": "Jeremy Crain",
+  "publisher": "JCrain",
+  "repository": "https://github.com/TaylorJC/mapbasic-lang",
   "displayName": "MapBasic Lang",
   "description": "Syntax highlighting for MapBasic",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "./MapBasicLangIcon.png",
   "engines": {
     "vscode": "^1.88.0"
