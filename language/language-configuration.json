@@ -25,9 +25,9 @@
     // Markers for defining 
     "folding": {
         "markers": {
-          "start": "^\\s*'\\s*Region\\b",
-          "end": "^\\s*'\\s*EndRegion\\b"
-        }
+          "start": "^(\\s*'\\s*Region\\b",
+          "end": "^\\s*'\\s*EndRegion\\b",
+        },
       },
       "wordPattern": "(-?\\d*\\.\\d\\w*)|([^\\`\\~\\!\\@\\#\\%\\^\\&\\*\\(\\)\\-\\=\\+\\[\\{\\]\\}\\\\\\|\\;\\:\\'\\\"\\,\\.\\<\\>\\/\\?\\s]+)",
       "indentationRules": {
@@ -36,7 +36,7 @@
       },
       "onEnterRules": [
         {
-          "beforeText": "^\\s*(?:For|If|ElseIf|Else|While|Case|Do|Create|Alter|Add|Dialog).*\\s*$",
+          "beforeText": "^\\s*\\b(?:For|If|ElseIf|Else|While|Case|Do|Create|Alter|Add|Dialog)\\b.*\\s*$",
           "action": { "indent": "indent" }
         }
       ]
