@@ -53,11 +53,7 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.mapbasic",
-					"match": "(?<!\\w)\\s*(\\d+)"
-				},
-				{
-					"name":"constant.language.value.mapbasic",
-					"match": "(?i)\\s(True|False)"
+					"match": "(?<!\\w)(\\d+)"
 				},
 				{
 					"name":"constant.language.function.mapbasic",
@@ -90,10 +86,9 @@
 			]
 		},
 		"keywords": {
-			"patterns": [
-				{
-					"name": "keyword.control.mapbasic",
-					"match": "\\s*(?i:Case|Do|ElseIf|Else|End|For|If|GoTo|Then|While|Exit)\\s(\\()?"			
+			"patterns": [{
+				"name": "keyword.control.mapbasic",
+				"match": "\\s*(?i:Case|Do|ElseIf|Else|End|For|If|GoTo|Then|While|Exit)\\s"			
 				},
 				{
 					"name": "keyword.operator.mapbasic",
@@ -101,7 +96,7 @@
 				},
 				{
 					"name": "keyword.other.mapbasic",
-					"match": "(?i)\\s*(\\b|\\()(\\#|Abbrs|Above|Access|Active|ActiveWindow|Adornment|Add|Adopt|All|Alter|Always|And|Angle|Antialias|Application|Ascending|Arc|Area|Arrow|As|At|Auto|AutoHidden|AutoLabel|Automatic|Autoscroll|Avg|Background|Bar|Beep|Begin|Bind|Binary|BlockSize|Bounds|Browse|BrushPicker|Button|ButtonPad|ButtonPads|By|ByVal|Cache|Call|Calling|Cancel|CancelButton|Caption|Cartographic|Center|Char|CharSet|Check|Checkable|CheckBox|Class|Clean|Clear|Close|CLS|Collection|Color|Column|Combine|Command|Commit|Connection|Contains|Context|Continue|Control|Controls|ConvertObjects|CoordSys|Copies|Count|Create|Current|Cursor|Cutter|Delimiter|Database|Datum|DBF|DDE|DDEExecute|DDEPoke|DDETerminate|DDETerminateAll|Decimal|Declare|Default|Define|Definition|Delete|Designer|Dialog|Digitizer|Dim|Disable|Disaggregate|Disconnect|Display|Distance|Docked|Document|DocumentWindow|Drag|DrawMode|Drop|DropDownButton|Driver|Drivercreateoptions|Duplicates|Earth|Editable|EditText|Ellipse|Enable|Enclose|Enhanced|Entire|Entirely|Erase|Error|Event|Exclusive|Execute|Export|Extents|ExtraSmall|FastEdit|FastPointRendering|Farthest|Fetch|File|FileSave|Filter|Find|First|Fixed|Floating|FME|FontPicker|Format|Frame|forward|From|Front|Function|GalleryControl|GalleryGroup|GalleryItem|Geocode|Get|Global|GPKG|Graph|Graphic|Grid|Group|GroupBox|Guides|Handler|Height|HelpMsg|Hide|High|Icon|ID|Image|Import|Include|Inclusive|Index|Inflect|Info|Input|Insert|Interactive|Intersect|Intersects|Interval|into|Isogram|Item|Kill|Label|Large|LargeIcon|Launcher|Layer|Layercreateoptions|Layout|Legend|Length|Lib|Like|Line|Lines|Link|ListBox|Locale|Loop|Map|Map3D|MapInfo|MapInfoDialog|Menu|MenuSeparator|Merge|Min|Max|Metadata|Method|Mod|Mode|ModifierKeys|Move|MRU|MultiListBox|MultiPoint|MWS|Name|Native|NativeX|Nearest|Next|None|Not|Nonearth|Noselect|Note|Number|Obj|Objects|ODBC|Offset|OKButton|OLE|OnError|On|Off|Open|Options|Or|Order|Orientation|Overwrite|Overlay|Pack|Paper|Papersize|Parallel|Part|Partly|Path|Pause|PenPicker|playback|Pline|Point|PopupMenu|Portrait|Position|Preserve|Print|Printer|PrintWin|PrismMap|Processing|Program|ProgressBar|ProgressBars|Projection|Properties|Quantile|Query|PushButton|Put|RadioButton|RadioGroup|Randomize|Range|Ranges|Rect|ReDim|Redistricter|Refresh|Region|Register|Relief|Reload|Remove|Rename|Report|Reproject|Reprojection|Resolution|Resume|Restart|Ribbon|RibbonMenuItem|Right|Rollback|RoundRect|Run|Save|Script|ScrollBars|SearchPoint|Seek|Select|Selectable|Separator|Server|Set|SetKey|Shade|Shades|Show|Size|Small|SmallIcon|Smart|SmartTextAdornment|Smooth|Snap|speed|Split|SplitButton|SQL|StaticText|StatusBar|Step|Stop|Style|Styles|Sub|Subtitle|Sum|SymbolPicker|Symbols|Tab|Table|Tabbed|Target|Task|Terminate|Text|Thickness|Threshold|Timeout|Title|Titles|To|ToggleButton|Tolerance|ToolButton|ToolTip|Touch|Transaction|Transform|Type|Uncheck|UnDim|Units|Unlink|Until|Update|URL|Use|Using|Value|Values|Variable|Vary|Version|Versioning|Vertical|View|Visibility|Warning|Wend|WFS|where|Width|Window|With|Within|Workspace|Write|WtAvg|XY|Zoom)(\\s+|\\(|\\))"
+					"match": "(?i)\\s*(\\b|\\()(#|Abbrs|Above|Access|Active|ActiveWindow|Adornment|Add|Adopt|All|Alter|Always|And|Angle|Antialias|Application|Ascending|Arc|Area|Arrow|As|At|Auto|AutoHidden|AutoLabel|Automatic|Autoscroll|Avg|Background|Bar|Beep|Begin|Bind|BlockSize|Bounds|Browse|BrushPicker|Button|ButtonPad|ButtonPads|By|ByVal|Cache|Call|Calling|Cancel|CancelButton|Caption|Cartographic|Center|Char|CharSet|Check|Checkable|CheckBox|Class|Clean|Clear|Close|CLS|Collection|Color|Column|Combine|Command|Commit|Connection|Contains|Context|Continue|Control|Controls|ConvertObjects|CoordSys|Copies|Count|Create|Current|Cursor|Cutter|Database|Datum|DBF|DDE|DDEExecute|DDEPoke|DDETerminate|DDETerminateAll|Decimal|Declare|Default|Define|Definition|Delete|Designer|Dialog|Digitizer|Dim|Disable|Disaggregate|Disconnect|Display|Distance|Docked|Document|DocumentWindow|Drag|DrawMode|Drop|DropDownButton|Duplicates|Earth|Editable|EditText|Ellipse|Enable|Enclose|Enhanced|Entire|Entirely|Erase|Error|Event|Exclusive|Execute|Export|Extents|ExtraSmall|FastEdit|FastPointRendering|Farthest|Fetch|File|FileSave|Filter|Find|First|Floating|FME|FontPicker|Format|Frame|forward|From|Function|GalleryControl|GalleryGroup|GalleryItem|Geocode|Get|Global|GPKG|Graph|Graphic|Grid|Group|GroupBox|Guides|Handler|Height|HelpMsg|Hide|High|Icon|ID|Image|Import|Include|Inclusive|Index|Inflect|Info|Input|Insert|Interactive|Intersect|Intersects|Interval|into|Isogram|Item|Kill|Label|Large|LargeIcon|Launcher|Layer|Layout|Legend|Length|Lib|Like|Line|Lines|Link|ListBox|Locale|Loop|Map|Map3D|MapInfo|MapInfoDialog|Menu|MenuSeparator|Merge|Min|Max|Metadata|Method|Mod|Mode|ModifierKeys|Move|MRU|MultiListBox|MultiPoint|MWS|Name|Native|NativeX|Nearest|Next|None|Not|Nonearth|Noselect|Note|Number|Obj|Objects|ODBC|Offset|OKButton|OLE|OnError|On|Off|Open|Options|Or|Order|Orientation|Overlay|Pack|Paper|Papersize|Parallel|Part|Partly|Path|Pause|PenPicker|playback|Pline|Point|PopupMenu|Portrait|Position|Preserve|Print|Printer|PrintWin|PrismMap|Processing|Program|ProgressBar|ProgressBars|Projection|Properties|Quantile|Query|PushButton|Put|RadioButton|RadioGroup|Randomize|Ranges|Rect|ReDim|Redistricter|Refresh|Region|Register|Relief|Reload|Remove|Rename|Report|Reproject|Reprojection|Resolution|Resume|Restart|Ribbon|RibbonMenuItem|Right|Rollback|RoundRect|Run|Save|Script|ScrollBars|SearchPoint|Seek|Select|Selectable|Separator|Server|Set|SetKey|Shade|Shades|Show|Size|Small|SmallIcon|Smart|SmartTextAdornment|Smooth|Snap|speed|Split|SplitButton|SQL|StaticText|StatusBar|Step|Stop|Style|Styles|Sub|Subtitle|Sum|SymbolPicker|Symbols|Tab|Table|Tabbed|Target|Task|Terminate|Text|Thickness|Threshold|Timeout|Title|To|ToggleButton|Tolerance|ToolButton|ToolTip|Touch|Transaction|Transform|Type|Uncheck|UnDim|Units|Unlink|Until|Update|URL|Use|Using|Value|Values|Variable|Vary|Version|Versioning|Vertical|View|Visibility|Warning|Wend|WFS|where|Width|Window|With|Within|Workspace|Write|WtAvg|XY|Zoom|TRUE|FALSE)(\\s+|\\(|\\))"
 				}
 			]
 		},
@@ -112,28 +107,20 @@
 					"match": "(?i)(?<=Global\\s)[a-zA-Z_0-9]+\\s*"
 				},
 				{
-					"name":"variable.local.mapbasic",
+					"name":"variable.dim.mapbasic",
 					"match": "(?i)(?<=(Dim|Redim)\\s)[a-zA-Z_0-9]+\\s*(,\\s*[a-zA-Z_0-9]+)*"
 				},
 				{
 					"name":"variable.assignment.mapbasic",
-					"match": "\\s*\\b[a-zA-Z_0-9]+\\b\\s*(\\(.*\\))?(?=\\=)"
+					"match": "\\s*\\b[a-zA-Z_0-9]+\\b\\s*(?=\\=)"
 				},
 				{
 					"name":"variable.access.mapbasic",
-					"match": "(?i)(?<=(Application|As|By|Case|Do|ElseIf|Else|File|Entire|Export|Layer|For|From|If|Map|Print|Program|GoTo|Range|Table|To|Units|Value|Variable|While|Window|Zoom|\\+|-|\\*|\\=|<>|&|<|>|Not|And|Or)\\s(\\()?)\\s*\\b[a-zA-Z_0-9\\.]+\\b\\s*"
-				},
-				{
-					"name":"variable.select.mapbasic",
-					"match": "(?i)(?<=(Select)\\s(\\()?)(\\s*\\b[a-zA-Z_0-9\\.]+\\s*(,)?)+\\b\\s*(?= From)"
-				},
-				{
-					"name":"variable.argument.mapbasic",
-					"match": "(?i)(?<=\\(|,)(\\s*\\b[a-zA-Z_0-9\\.]+($)?(\\([a-z0-9.]+\\))?\\s*(\\+|-|\\*|/))+(?=,|\\))"
+					"match": "(?i)(?<=(\\=|\\+|<>|\\<|\\>|\\&|If|Not|Else|Case|While|And|Or)\\s)\\s*\\b[a-zA-Z_0-9]+\\b\\s*"
 				},
 				{
 					"name":"variable.parameter.mapbasic",
-					"match": "(?i)(?<=\\(|,|ByVal )\\s*\\b[a-zA-Z_0-9]+($)?(\\(\\))?\\s*(?=,|\\)| As)"
+					"match": "(?i)(?<=\\(|,)\\s*\\b[a-zA-Z_0-9]+($)?(\\([a-z0-9]+\\))?\\s*(?=,|\\))"
 				},
 				{
 					"name":"variable.function.mapbasic",
@@ -141,15 +128,11 @@
 				},
 				{
 					"name":"variable.sub.mapbasic",
-					"match": "(?i)(?<=Sub\\s|Call\\s|Calling\\s)[a-zA-Z_0-9]+\\s*(\\()?"
+					"match": "(?i)(?<=Sub\\s)[a-zA-Z_0-9]+\\s*(\\()?"
 				},
 				{
 					"name":"variable.method.mapbasic",
 					"match": "(?i)(?<=Method\\s)[a-zA-Z_0-9]+\\s*(\\()?"
-				},
-				{
-					"name":"variable.label.mapbasic",
-					"match": "(?i)^\\s*[a-zA-Z_0-9]+\\s*(\\:)?"
 				}
 			]
 		}

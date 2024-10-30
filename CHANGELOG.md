@@ -4,6 +4,11 @@ All notable changes to the "mapbasic-lang" extension will be documented in this 
 
 ## [Released]
 
+## [1.1.0] - 2024-10-30
+
+- Added imagery to the README.
+- Corrected inaccurate syntax regular expressions, particularly around function parameters.
+
 ## [1.0.0] - 2024-10-29
 
 - Add a MIT/Expat license

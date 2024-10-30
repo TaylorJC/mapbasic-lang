@@ -1,6 +1,6 @@
 {
     "For": {
-        "prefix": "for",
+        "prefix": "For",
         "body": [
             "For ${1:var_name} = ${2:start_expr} To ${3:end_expr}",
             "\t$0",
@@ -9,7 +9,7 @@
         "description": "For Loop"
     },
     "While": {
-        "prefix": "while",
+        "prefix": "While",
         "body": [
             "While ${1:var_name}",
             "\t$0",
@@ -18,7 +18,7 @@
         "description": "While Loop"
     },
     "if": {
-        "prefix": "if",
+        "prefix": "If",
         "body": [
             "If ${1:condition} Then",
             "\t$0",
@@ -27,7 +27,7 @@
         "description": "If Then"
     },
     "if_else": {
-        "prefix": "if",
+        "prefix": "If",
         "body": [
             "If ${1:condition} Then",
             "\t$0",
@@ -38,7 +38,7 @@
         "description": "If Else"
     },
     "Do_loop": {
-        "prefix": "do",
+        "prefix": "Do",
         "body": [
             "Do",
             "\t$0",
