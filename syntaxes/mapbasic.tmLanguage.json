@@ -109,11 +109,11 @@
 			"patterns": [
 				{
 					"name":"variable.global.mapbasic",
-					"match": "(?i)(?<=Global\\s)[a-zA-Z_0-9]+\\s*"
+					"match": "(?i)(?<=Global\\s+)[a-zA-Z_0-9]+\\s*"
 				},
 				{
 					"name":"variable.local.mapbasic",
-					"match": "(?i)(?<=(Dim|Redim)\\s)[a-zA-Z_0-9]+\\s*(,\\s*[a-zA-Z_0-9]+)*"
+					"match": "(?i)(?<=(Dim|Redim)\\s+)[a-zA-Z_0-9]+\\s*(,\\s*[a-zA-Z_0-9]+)*"
 				},
 				{
 					"name":"variable.assignment.mapbasic",
@@ -121,7 +121,7 @@
 				},
 				{
 					"name":"variable.access.mapbasic",
-					"match": "(?i)(?<=(Application|As|By|Case|Do|ElseIf|Else|File|Entire|Export|Layer|For|From|If|Map|Print|Program|GoTo|Range|Table|To|Units|Value|Variable|While|Window|Zoom|\\+|-|\\*|\\=|<>|&|<|>|Not|And|Or)\\s(\\()?)\\s*\\b[a-zA-Z_0-9\\.]+\\b\\s*"
+					"match": "(?i)(?<=(Application|As|By|Case|Database|Do|ElseIf|Else|File|Entire|Export|Layer|For|From|If|Index|Map|Print|Program|GoTo|Range|Table|To|Type|Units|Update|Value|Variable|While|Window|Zoom|\\+|-|\\*|\\=|<>|&|<|>|Not|And|Or)\\s+(\\()?)\\s*\\b[a-zA-Z_0-9\\.]+\\b\\s*"
 				},
 				{
 					"name":"variable.select.mapbasic",
@@ -141,7 +141,7 @@
 				},
 				{
 					"name":"variable.sub.mapbasic",
-					"match": "(?i)(?<=Sub\\s|Call\\s|Calling\\s)[a-zA-Z_0-9]+\\s*(\\()?"
+					"match": "(?i)(?<=Sub\\s+|Call\\s+|Calling\\s+)[a-zA-Z_0-9]+\\s*(\\()?"
 				},
 				{
 					"name":"variable.method.mapbasic",
